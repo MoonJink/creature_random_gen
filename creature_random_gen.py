@@ -15,7 +15,19 @@ def species_type():
         "Monster",
         "Beast"
     ]
-    return random.choice(species_type_array)
+    species_type = random.choice(species_type_array)
+    if species_type == "Divine":
+        divine_type_array = [
+            " (plucked)",
+            " (bowed)",
+            " (woodwind)",
+            " (brass)",
+            " (chimes)",
+            " (bell)"
+        ]
+        divine_type_choice = random.choice(divine_type_array)
+        species_type += divine_type_choice
+    return species_type
 
 def environment():
     environment_array = [
