@@ -1,11 +1,11 @@
-# ------------------------------
+# -----------------------------
 # IMPORTS
-# ------------------------------
+# -----------------------------
 import random
 
-# ------------------------------
+# -----------------------------
 # SUBPROGRAMS
-# ------------------------------
+# -----------------------------
 
 def species_type():
     species_type_array = [
@@ -104,9 +104,9 @@ def diet():
     ]
     return random.choice(diet_array)
 
-# ------------------------------
+# -----------------------------
 # MAIN
-# ------------------------------
+# -----------------------------
 def main():
     print(f"\n'{species_type()}' from '{country()}' in a '{environment()}' habitat with aggression level '{aggression()}' and danger level '{danger()}'. Its diet is '{diet()}'.")
 main()
